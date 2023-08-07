@@ -9,6 +9,7 @@ import { LessonsResolver } from '../services/lessons.resolver';
 import { LessonDetailResolver } from '../services/lesson-detail.resolver';
 import { AuthGuard } from '../services/auth.guard';
 import { ConfirmExitGuard } from '../services/confirm-exit.guard';
+import { CanLoadAuthGuard } from '../services/can-load-auth.guard';
 
 
 const routes: Routes = [
@@ -54,7 +55,7 @@ const routes: Routes = [
     LessonsResolver,
     LessonDetailResolver,
     AuthGuard,
-    ConfirmExitGuard
+    ConfirmExitGuard,
   ]
 })
 export class CoursesRoutingModule {
